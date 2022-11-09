@@ -51,3 +51,51 @@ function darkmode(){
 
     Theme.classList.toggle("dark_mode")
 }
+
+//Greeting
+window.onload = function(){
+    let time = new Date() //gets the current date
+
+    let greetElement = document.getElementById("greeting")
+
+    //before 12pm - morning
+
+    if(time.getHours() < 12){
+        greet = "Good morning!"
+
+    }else if (time.getHours() < 18){
+        greet = "Good Afternoon!"
+
+    }else{
+        greet = "Good evening"
+    }
+    greetElement.innerText = greet
+}
+
+//Countdown
+
+const countDown = () => {
+    const countDate = new Date("November 20, 2022 00:00:00").getTime();
+    const today = new Date().getTime();
+    const difference = countDate - today;
+
+
+const second = 1000;
+const minute = second * 60
+const hour = minute * 60
+const day = hour * 24
+
+const textDay = Math.floor(difference / day);
+const textHour = Math.floor((difference % day) / hour);
+const textMinute = Math.floor((difference % hour) / minute)
+const textSecond = Math.floor((difference % minute)/ second)
+
+document.querySelector(".day").textContent = textDay;
+document.querySelector(".hour").textContent = textHour;
+document.querySelector(".minute").textContent = textMinute;
+document.querySelector(".second").textContent = textSecond;
+}
+setInterval(countDown, 1000);
+
+d
+

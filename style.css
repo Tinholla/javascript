@@ -9,3 +9,16 @@
     background-color: black;
     color: white;
 }
+
+.d_flex{
+    display: flex;
+    justify-content: space-between;
+    background-color:bisque;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 2%;
+    width: 70%;
+    margin-left: 15%;
+    color: darkred;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
