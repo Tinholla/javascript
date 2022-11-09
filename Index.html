@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- SYNTAX -->
+    <!-- element.addEventListener(event,function, useCapture(optional)); -->
+     <!-- element.addEventListener("click",function(), {Alert(Hello World)})); -->
+    
+    <button id="btn1" onclick="handleClick()">Hi</button>
+    <a href="" onclick="Greeting()">Greet</a>
+
+    <!-- Method2 -->
+    <button class="btn" onclick="handleClick2()">CLICK ME</button>
+    <!-- Method3 -->
+    <img class="img1" src="./images/fantasy-3077928__480.jpeg" alt="">
+
+    <button class="btn" onclick="handleClick3(this)">CLICK ME</button>
+
+    <!-- Method4 -->
+    <button onclick="handleClick(this)">Try me</button>
+
+    <button type="submit" class="btn_1" onclick="darkmode()">Click Me</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
